@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TECHNO Educational Platform</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/lucide-react@0.246.0/dist/umd/lucide-react.min.js" rel="stylesheet">
+  <style>
+    body {
+      background: linear-gradient(180deg, #007BFF, #0056b3);
+      color: white;
+    }
+    .hero-image {
+      background-image: url('https://via.placeholder.com/1200x400');
+      background-size: cover;
+      background-position: center;
+      height: 400px;
+      position: relative;
+    }
+    .hero-image .overlay {
+      background: rgba(0, 0, 0, 0.5);
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      text-align: center;
+    }
+    .hero-image .overlay h1 {
+      font-size: 3rem;
+      margin-bottom: 1rem;
+    }
+    .hero-image .overlay p {
+      font-size: 1.2rem;
+    }
+    .course-card {
+      background: white;
+      color: black;
+      border-radius: 8px;
+      overflow: hidden;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      transition: transform 0.2s;
+    }
+    .course-card:hover {
+      transform: translateY(-10px);
+    }
+    .course-card img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
+    .course-card .card-content {
+      padding: 1rem;
+    }
+    .course-card .card-content h3 {
+      font-size: 1.5rem;
+      margin-bottom: 0.5rem;
+    }
+    .course-card .card-content p {
+      margin-bottom: 1rem;
+    }
+    .course-card .card-content .instructor {
+      font-size: 1rem;
+      color: #555;
+    }
+    .course-card .card-content .rating {
+      font-size: 1rem;
+      color: #FFD700;
+    }
+    .course-card .card-content .enroll-button {
+      background: #007BFF;
+      color: white;
+      border: none;
+      padding: 0.5rem 1rem;
+      border-radius: 4px;
+      cursor: pointer;
+      transition: background 0.2s;
+    }
+    .course-card .card-content .enroll-button:hover {
+      background: #0056b3;
+    }
+  </style>
+</head>
+<body>
+  <header class="bg-white text-black flex justify-between items-center p-4">
+    <div class="logo">
+      <h1>TECHNO</h1>
+    </div>
+    <nav>
+      <ul class="flex space-x-4">
+        <li><a href="#" class="nav-link">HOME</a></li>
+        <li><a href="#" class="nav-link">ABOUT US</a></li>
+        <li><a href="#" class="nav-link">PROGRAMS</a></li>
+        <li><a href="#" class="nav-link">EVENTS</a></li>
+      </ul>
+    </nav>
+  </header>
+  <section class="hero-image">
+    <div class="overlay">
+      <h1>Welcome to TECHNO</h1>
+      <p>Your gateway to knowledge and success</p>
+    </div>
+  </section>
+  <section class="boxes-container flex justify-center items-center p-8">
+    <div class="box bg-blue-500 p-8 m-4 text-center rounded-lg">
+      <h2>College Events</h2>
+    </div>
+    <div class="box bg-green-500 p-8 m-4 text-center rounded-lg">
+      <h2>Students</h2>
+    </div>
+    <div class="box bg-red-500 p-8 m-4 text-center rounded-lg">
+      <h2>Teachers Profiles</h2>
+    </div>
+    <div class="box bg-yellow-500 p-8 m-4 text-center rounded-lg">
+      <h2>Education is the most powerful weapon</h2>
+      <p>Education empowers individuals to shape their future and contribute positively to society.</p>
+    </div>
+  </section>
+  <section class="images-container flex justify-center items-center p-8">
+    <img src="https://via.placeholder.com/300x200" alt="Building" class="m-4">
+    <img src="https://via.placeholder.com/300x200" alt="Graduation Caps" class="m-4">
+    <img src="https://via.placeholder.com/300x200" alt="Graduation Gown" class="m-4">
+  </section>
+  <section class="courses-container p-8">
+    <h2 class="text-center text-2xl font-bold mb-8">Latest Courses</h2>
+    <div class="flex justify-center items-center flex-wrap">
+      <div class="course-card m-4">
+        <img src="https://via.placeholder.com/300x200" alt="Course 1">
+        <div class="card-content">
+          <h3>Introduction to Programming</h3>
+          <p>Learn the basics of programming with Python.</p>
+          <div class="instructor">Instructor: John Doe</div>
+          <div class="rating">★★★★★</div>
+          <button class="enroll-button">Enroll Now</button>
+        </div>
+      </div>
+      <div class="course-card m-4">
+        <img src="https://via.placeholder.com/300x200" alt="Course 2">
+        <div class="card-content">
+          <h3>Data Structures and Algorithms</h3>
+          <p>Master the fundamentals of data structures and algorithms.</p>
+          <div class="instructor">Instructor: Jane Smith</div>
+          <div class="rating">★★★★☆</div>
+          <button class="enroll-button">Enroll Now</button>
+        </div>
+      </div>
+      <div class="course-card m-4">
+        <img src="https://via.placeholder.com/300x200" alt="Course 3">
+        <div class="card-content">
+          <h3>Machine Learning Basics</h3>
+          <p>Get started with machine learning and AI.</p>
+          <div class="instructor">Instructor: Alice Johnson</div>
+          <div class="rating">★★★☆☆</div>
+          <button class="enroll-button">Enroll Now</button>
+        </div>
+      </div>
+    </div>
+  </section>
+</body>
+</html>
